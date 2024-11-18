@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Template</title>
+    <link rel="stylesheet" href="styles/invoice.css">
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="header">
+            <div class="invoice-details">
+                <h1>Invoice</h1>
+                <div class="invoice-info">
+                    <p>Invoice No: #INV0001</p>
+                    <p>Invoice Date: Sep 24, 2023</p>
+                    <p>Due Date: Sep 30, 2023</p>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="images/logo.png" alt="Company Logo">
+            </div>
+        </div>
+
+        <div class="billing-info">
+            <div class="billing-card">
+                <h2>Billed By</h2>
+                <div class="billing-details">
+                    <strong>Sandeep Maurya</strong>
+                    <p>305, 3rd Floor Orion mall</p>
+                    <p>Bengaluru, Karnataka, India - 560055</p>
+                    <p>Email: sandeepmauryadesigns@gmail.com</p>
+                    <p>Phone: +91 98765 43210</p>
+                </div>
+            </div>
+
+            <div class="billing-card">
+                <h2>Billed To</h2>
+                <div class="billing-details">
+                    <strong>MbolangTrans</strong>
+                    <p>Jalan Candi Mendut III No 9 Lowokwaru, Malang</p>
+                    <p>Email: bolangtrans6787@gmail.com</p>
+                    <p>Phone: +62 823 3803 6787</p>
+                </div>
+            </div>
+        </div>
+
+        <table class="service-table">
+            <thead>
+                <tr>
+                    <th style="width: 50%">Service and description</th>
+                    <th style="width: 15%">Qty</th>
+                    <th style="width: 15%">Rate</th>
+                    <th style="width: 20%">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>Family Trip to Bali</div>
+                        <div class="description">Create and send unlimited professional invoices for free.</div>
+                    </td>
+                    <td>1</td>
+                    <td>$1000</td>
+                    <td>$1000</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>Car Rent Bali</div>
+                        <div class="description">Create and send unlimited professional invoices for free.</div>
+                    </td>
+                    <td>1</td>
+                    <td>$200</td>
+                    <td>$200</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="summary-section">
+            <div class="bank-details">
+                <h2>Bank Account Details</h2>
+                <dl class="bank-info">
+                    <dt>Bank Name</dt>
+                    <dd>HDFC Bank</dd>
+                    <dt>Account Holder Name</dt>
+                    <dd>Foobar Labs</dd>
+                    <dt>Account Number</dt>
+                    <dd>45366287987</dd>
+                    <dt>IFSC</dt>
+                    <dd>HDFC0018159</dd>
+                    <dt>Account Type</dt>
+                    <dd>Savings</dd>
+                </dl>
+            </div>
+
+            <div class="amount-summary">
+                <dl class="amount-list">
+                    <dt>Sub Total</dt>
+                    <dd>$1200</dd>
+                    <dt>Discount(0%)</dt>
+                    <dd>$0</dd>
+                    <dt>VAT(5%)</dt>
+                    <dd>$60</dd>
+                    <div class="amount-total">
+                        <dt>Amount Due</dt>
+                        <dd>$1260</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+
+        <div class="terms">
+            <h2>Terms and Conditions</h2>
+            <ul>
+                <li>Please pay within 15 days from the date of invoice, overdue interest @ 14% will be charged on delayed payments.</li>
+                <li>Please quote invoice number when remitting funds.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
