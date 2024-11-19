@@ -437,40 +437,46 @@ section
 3.2 Logo
 *********************************/
 
-.logo_container
-{
-	-webkit-transform: translateY(-6px);
-	-moz-transform: translateY(-6px);
-	-ms-transform: translateY(-6px);
-	-o-transform: translateY(-6px);
-	transform: translateY(-6px);
-}
-.header.scrolled .logo_container
-{
-	-webkit-transform: none;
-	-moz-transform: none;
-	-ms-transform: none;
-	-o-transform: none;
-	transform: none;
-}
-.logo a
-{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
-	color: #f4f4f8;
-	font-weight: 800;
-	text-transform: uppercase;
-}
-.logo a img
-{
-	display: inline-block;
-	vertical-align: baseline;
-	margin-right: 9px;
-	-webkit-transform: translateY(2px);
-	-moz-transform: translateY(2px);
-	-ms-transform: translateY(2px);
-	-o-transform: translateY(2px);
-	transform: translateY(2px);
+.logo_container {
+
+	flex-shrink: 0; /* Mencegah logo meluas ke area lain */
+
+  }
+
+  
+
+  /* Gaya logo */
+
+  .logo {
+
+	display: flex;
+
+	align-items: center; /* Sejajarkan logo dengan teks secara vertikal */
+
+  }
+
+  
+
+  .logo a {
+
+	display: flex;
+
+	align-items: center; /* Sejajarkan logo dan teks dalam tautan */
+
+	text-decoration: none; /* Hilangkan garis bawah pada teks */
+
+  }
+
+  
+
+  .logo img {
+
+	max-width: 100px; /* Atur lebar maksimum gambar logo */
+
+	height: auto; /* Mempertahankan rasio gambar */
+
+	margin-right: 10px; /* Beri jarak antara logo dan teks */
+
 }
 
 /*********************************
