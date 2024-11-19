@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Form</title>
+    <link rel="stylesheet" href="styles/data_invoice.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Form</h1>
+        <!-- Form modified with action to navigate to invoice.html -->
+        <form id="invoiceForm" action="invoice.html" method="GET">
+            <!-- Billed By Section -->
+            <div class="form-section">
+                <h2>Billed By</h2>
+                <label for="billedByName">Name</label>
+                <input type="text" id="billedByName" name="billedByName" placeholder="Enter name" required>
+                <label for="billedByAddress">Address</label>
+                <textarea id="billedByAddress" name="billedByAddress" rows="3" placeholder="Enter address" required></textarea>
+                <label for="billedByEmail">Email</label>
+                <input type="email" id="billedByEmail" name="billedByEmail" placeholder="Enter email" required>
+                <label for="billedByPhone">Phone</label>
+                <input type="text" id="billedByPhone" name="billedByPhone" placeholder="Enter phone number" required>
+            </div>
+
+            <!-- Billed To Section -->
+            <div class="form-section">
+                <h2>Billed To</h2>
+                <label for="billedToName">Name</label>
+                <input type="text" id="billedToName" name="billedToName" placeholder="Enter name" required>
+                <label for="billedToAddress">Address</label>
+                <textarea id="billedToAddress" name="billedToAddress" rows="3" placeholder="Enter address" required></textarea>
+                <label for="billedToEmail">Email</label>
+                <input type="email" id="billedToEmail" name="billedToEmail" placeholder="Enter email" required>
+                <label for="billedToPhone">Phone</label>
+                <input type="text" id="billedToPhone" name="billedToPhone" placeholder="Enter phone number" required>
+            </div>
+
+            <!-- Services Section -->
+            <div class="form-section">
+                <h2>Services and Description</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Description</th>
+                            <th>Qty</th>
+                            <th>Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody id="servicesTable">
+                        <tr>
+                            <td><input type="text" name="serviceDesc[]" placeholder="Enter description" required></td>
+                            <td><input type="number" name="qty[]" placeholder="Enter quantity" required></td>
+                            <td><input type="number" name="rate[]" placeholder="Enter rate" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="add-service" onclick="addServiceRow()">Tambahan</button>
+            </div>
+
+            <!-- Bank Details Section -->
+            <div class="form-section">
+                <h2>Bank Account Details</h2>
+                <label for="bankName">Bank Name</label>
+                <input type="text" id="bankName" name="bankName" placeholder="Enter bank name" required>
+                <label for="accountHolder">Account Holder</label>
+                <input type="text" id="accountHolder" name="accountHolder" placeholder="Enter account holder name" required>
+                <label for="accountNumber">Account Number</label>
+                <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter account number" required>
+                <label for="ifsc">IFSC</label>
+                <input type="text" id="ifsc" name="ifsc" placeholder="Enter IFSC code" required>
+            </div>
+
+            <!-- Button to Submit -->
+            <button type="submit" class="submit-btn">Pesan</button>
+        </form>
+    </div>
+
+    <script>
+        function addServiceRow() {
+            const table = document.getElementById('servicesTable');
+            const newRow = `
+                <tr>
+                    <td><input type="text" name="serviceDesc[]" placeholder="Enter description" required></td>
+                    <td><input type="number" name="qty[]" placeholder="Enter quantity" required></td>
+                    <td><input type="number" name="rate[]" placeholder="Enter rate" required></td>
+                </tr>
+            `;
+            table.insertAdjacentHTML('beforeend', newRow);
+        }
+    </script>
+</body>
+</html>
