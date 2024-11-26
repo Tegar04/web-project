@@ -474,7 +474,10 @@ section
 	align-items: center; /* Sejajarkan logo dan teks dalam tautan */
 
 	text-decoration: none; /* Hilangkan garis bawah pada teks */
-
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #FFFFFF;
+	font-size: 22px;
   }
 
   
