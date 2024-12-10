@@ -1,0 +1,54 @@
+.invoice-section {
+    margin: 20px 0;
+  }
+  
+  .invoice-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+  }
+  
+  .table th {
+    background-color: #6c63ff;
+    color: white;
+    text-align: center;
+  }
+  
+  .table td {
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: #6C63FF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #4A47A3;
+  }
+  
+  .btn-secondary {
+    background-color: #aaa;
+    color: #333;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #888;
+  }
+  

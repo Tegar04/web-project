@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Offer - Travel & Trip</title>
+  <link rel="stylesheet" href="styles/offer_travel.css">
+</head>
+<body>
+  <div class="add-offer-page">
+    <header class="header">
+      <h1>Add Offer - Travel & Trip</h1>
+    </header>
+    <main class="form-container">
+      <form class="offer-form" action="#" method="POST">
+        <!-- Input for Name -->
+        <div class="form-group">
+          <label for="name">Travel & Trip Package Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter package name" required>
+        </div>
+
+        <!-- Input for Description -->
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4" placeholder="Enter package description" required></textarea>
+        </div>
+
+        <!-- Input for Price -->
+        <div class="form-group">
+          <label for="price">Price (USD)</label>
+          <input type="number" id="price" name="price" placeholder="Enter price in USD" required>
+        </div>
+
+        <!-- Input for Image URL -->
+        <div class="form-group">
+          <label for="image-url">Image URL</label>
+          <input type="url" id="image-url" name="image_url" placeholder="Enter image URL" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit Offer</button>
+          <a href="admin.html" class="btn-secondary">Cancel</a>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

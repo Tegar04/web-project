@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="styles/admin.css"> <!-- Menggunakan CSS admin untuk sidebar -->
+  <link rel="stylesheet" href="styles/list_invoice.css"> <!-- CSS khusus untuk konten invoice -->
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Mbolang Trans</h2>
+      <nav class="nav">
+        <a href="admin.html" class="nav-item">Home</a>
+        <a href="order.html" class="nav-item">Order</a>
+        <a href="invoice.html" class="nav-item active">Invoice</a>
+        <a href="list_travel.html" class="nav-item">Travel & Trip</a>
+        <a href="list_car.html" class="nav-item">Car Rental</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Invoice Management</h1>
+        <input type="text" class="search-bar" placeholder="Search...">
+      </header>
+
+      <section class="invoice-section">
+        <h2>Invoice List</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Invoice ID</th>
+              <th>Customer Name</th>
+              <th>Payment Amount</th>
+              <th>Payment Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>INV-001</td>
+              <td>John Doe</td>
+              <td>$500</td>
+              <td>Paid</td>
+              <td><button class="btn btn-secondary">View</button></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>INV-002</td>
+              <td>Jane Doe</td>
+              <td>$300</td>
+              <td>Pending</td>
+              <td><button class="btn btn-secondary">View</button></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>INV-003</td>
+              <td>Alice Smith</td>
+              <td>$700</td>
+              <td>Paid</td>
+              <td><button class="btn btn-secondary">View</button></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>INV-004</td>
+              <td>Bob Martin</td>
+              <td>$400</td>
+              <td>Pending</td>
+              <td><button class="btn btn-secondary">View</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

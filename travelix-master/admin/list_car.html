@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental - CRUD</title>
+  <link rel="stylesheet" href="styles/admin.css">
+  <link rel="stylesheet" href="styles/list_travel.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Mbolang Trans</h2>
+      <nav class="nav">
+        <a href="admin.html" class="nav-item">Home</a>
+        <a href="order.html" class="nav-item">Order</a>
+        <a href="invoice.html" class="nav-item">Invoice</a>
+        <a href="list_travel.html" class="nav-item">Travel & Trip</a>
+        <a href="list_car.html" class="nav-item active">Car Rental</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Car Rental - Manage Offers</h1>
+        <a href="car_offer.html" class="btn">Add New Offer</a>
+      </header>
+      <main class="content">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Image</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="offerTable">
+            <!-- Rows will be dynamically generated here -->
+          </tbody>
+        </table>
+      </main>
+    </main>
+  </div>
+</body>
+</html>

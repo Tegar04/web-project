@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order - Mbolang Trans</title>
+  <link rel="stylesheet" href="styles/admin.css"> <!-- Menggunakan CSS admin untuk sidebar -->
+  <link rel="stylesheet" href="styles/list_order.css"> <!-- CSS khusus untuk konten order -->
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">Mbolang Trans</h2>
+      <nav class="nav">
+        <a href="admin.html" class="nav-item">Home</a>
+        <a href="order.html" class="nav-item active">Order</a>
+        <a href="invoice.html" class="nav-item">Invoice</a>
+        <a href="list_travel.html" class="nav-item">Travel & Trip</a>
+        <a href="list_car.html" class="nav-item">Car Rental</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="header">
+        <h1>Order Management</h1>
+      </header>
+
+      <section class="order-section">
+        <h2>Pending Orders</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Order Name</th>
+              <th>Customer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>New York Tour</td>
+              <td>John Doe</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Beach Vacation</td>
+              <td>Jane Doe</td>
+              <td>Pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="order-section">
+        <h2>Successful Payments</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Order Name</th>
+              <th>Customer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>European Tour</td>
+              <td>Alice Smith</td>
+              <td>Successful</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Caribbean Cruise</td>
+              <td>Bob Martin</td>
+              <td>Successful</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

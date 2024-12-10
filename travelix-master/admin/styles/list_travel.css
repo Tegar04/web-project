@@ -1,0 +1,59 @@
+/* Styles for CRUD Page */
+.crud-page {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #f4f4f4;
+  }
+  
+  .btn {
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #4A47A3;
+  }
+  
+  .btn-secondary {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #aaa;
+  }
+  
