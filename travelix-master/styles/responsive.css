@@ -577,3 +577,10 @@
 {
 	
 }
+
+
+
+/* Untuk memberikan jarak antar elemen secara keseluruhan */
+.intro_col {
+    margin-bottom: 30px; /* Jarak antar elemen vertikal */
+}

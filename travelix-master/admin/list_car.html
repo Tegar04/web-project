@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Rental - CRUD</title>
+  <title>Car Rental - List Cars</title>
   <link rel="stylesheet" href="styles/admin.css">
   <link rel="stylesheet" href="styles/list_travel.css">
 </head>
@@ -25,7 +25,7 @@
     <main class="main-content">
       <header class="header">
         <h1>Car Rental - Manage Offers</h1>
-        <a href="car_offer.html" class="btn">Add New Offer</a>
+        <a href="admin_car/admin_car.html" class="btn">Add New Offer</a>
       </header>
       <main class="content">
         <table class="table">
@@ -35,16 +35,17 @@
               <th>Name</th>
               <th>Description</th>
               <th>Price</th>
+              <th>Booking Status</th>
               <th>Image</th>
-              <th>Actions</th>
             </tr>
           </thead>
-          <tbody id="offerTable">
+          <tbody id="carListTable">
             <!-- Rows will be dynamically generated here -->
           </tbody>
         </table>
       </main>
     </main>
   </div>
+  <script src="js/list_car.js"></script>
 </body>
 </html>
