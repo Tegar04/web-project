@@ -71,6 +71,7 @@ async function loadAdmins() {
                 <td>${admin.harga}</td>
                 <td>${admin.boking}</td>
                 <td><img src="http://127.0.0.1:8000/storage/${admin.image}" alt="Gambar" style="max-width: 100px;"></td>
+
                 <td>
                     <button onclick="deleteAdmin(${admin.id})">Hapus</button>
                     <button onclick="editAdmin(${admin.id})">Edit</button>

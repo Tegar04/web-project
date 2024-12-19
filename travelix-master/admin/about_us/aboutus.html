@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Management</title>
+    <link rel="stylesheet" href="aboutus.css">
+</head>
+<body>
+    <div class="container">
+        <h1>About Us Management</h1>
+
+        <!-- Form for Adding/Editing -->
+        <form id="aboutUsForm">
+            <input type="hidden" id="aboutUsId">
+            <label for="title">Title</label>
+            <input type="text" id="title" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" required></textarea>
+
+            <button type="submit">Save</button>
+        </form>
+
+        <h2>About Us List</h2>
+        <ul id="aboutUsList"></ul>
+    </div>
+    <script src="aboutus.js"></script>
+</body>
+</html>
