@@ -8,3 +8,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::apiResource('/admin', App\Http\Controllers\AdminsController::class);
+Route::apiResource('aboutus', App\Http\Controllers\AboutUsController::class);
