@@ -833,303 +833,50 @@ section
 	margin-top: 57px;
 	z-index: 1;
 }
-
-/*********************************
-6. Section Title
-*********************************/
-
-.section_title
-{
-	font-size: 30px;
-	font-weight: 700;
-	color: #2d2c2c;
-	margin-top: -8px;
-	text-transform: uppercase;
+/* Menambahkan jarak atas dan bawah pada Contact Section */
+.contact_section {
+    margin-bottom: 50px; /* Jarak antara Contact Section dan Footer */
 }
 
-/*********************************
-7. Rating
-*********************************/
-
-.rating
-{
-	margin-top: 10px;
-}
-.rating i
-{
-	font-size: 19px;
-	margin-right: 4px;
-}
-.rating i:last-child
-{
-	margin-right: 0px;
-}
-.rating_1 i:first-child{color: #ffeb8d;}
-.rating_2 i:first-child{color: #ffeb8d;}
-.rating_2 i:nth-child(2){color: #fed46b;}
-.rating_3 i:first-child{color: #ffeb8d;}
-.rating_3 i:nth-child(2){color: #fed46b;}
-.rating_3 i:nth-child(3){color: #fbb53d;}
-.rating_4 i:first-child{color: #ffeb8d;}
-.rating_4 i:nth-child(2){color: #fed46b;}
-.rating_4 i:nth-child(3){color: #fbb53d;}
-.rating_4 i:nth-child(4){color: #fa9e1b;}
-.rating_5 i:first-child{color: #ffeb8d;}
-.rating_5 i:nth-child(2){color: #fed46b;}
-.rating_5 i:nth-child(3){color: #fbb53d;}
-.rating_5 i:nth-child(4){color: #fa9e1b;}
-.rating_r i::before
-{
-	font-family: 'FontAwesome';
-	content: "\f006";
-	font-style: normal;
-	font-size: 19px;
-	margin-right: 4px;
-}
-.rating_r_1 i:first-child::before{color: #ffeb8d; content: "\f005";}
-.rating_r_2 i:first-child::before{color: #ffeb8d; content: "\f005";}
-.rating_r_2 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
-.rating_r_3 i:first-child::before{color: #ffeb8d; content: "\f005";}
-.rating_r_3 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
-.rating_r_3 i:nth-child(3)::before{color: #fbb53d; content: "\f005";}
-.rating_r_4 i:first-child::before{color: #ffeb8d; content: "\f005";}
-.rating_r_4 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
-.rating_r_4 i:nth-child(3)::before{color: #fbb53d; content: "\f005";}
-.rating_r_4 i:nth-child(4)::before{color: #fa9e1b; content: "\f005";}
-.rating_r_5 i:first-child::before{color: #ffeb8d; content: "\f005";}
-.rating_r_5 i:nth-child(2)::before{color: #fed46b; content: "\f005";}
-.rating_r_5 i:nth-child(3)::before{color: #fbb53d; content: "\f005";}
-.rating_r_5 i:nth-child(4)::before{color: #fa9e1b; content: "\f005";}
-.rating_r_5 i:nth-child(5)::before{color: #ef910a; content: "\f005";}
-
-/*********************************
-8. Stats
-*********************************/
-
-.stats
-{
-	padding-top: 100px;
-	padding-bottom: 105px;
-}
-.stats_text
-{
-	margin-top: 21px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-.stats_years
-{
-	padding-left: 116px;
-	padding-right: 116px;
-	margin-top: 39px;
-}
-.stats_contents
-{
-	margin-top: 23px;
-	padding-left: 55px;
-	padding-right: 55px;
-}
-.stats_years div
-{
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 700;
-	color: #fa9e1b;
-}
-.stats_item
-{
-	margin-bottom: 24px;
-}
-.stats_item:last-child
-{
-	margin-bottom: 0px;
-}
-.stats_last
-{
-	width: 25%;
-	float: left;
-	padding-left: 60px;
-}
-.stats_new
-{
-	width: 25%;
-	float: left;
-	padding-right: 60px;
-}
-.stats_last_icon
-{
-	position: absolute;
-	bottom:0;
-	left:0;
-	width: 60px;
-	height: 100%;
-	padding-bottom: 5px;
-}
-.stats_new_icon
-{
-	position: absolute;
-	bottom:0;
-	right:0;
-	width: 60px;
-	height: 100%;
-	padding-bottom: 5px;
-}
-.stats_last_content
-{
-
-}
-.stats_number
-{
-	font-size: 24px;
-	font-weight: 600;
-	color: #2d2c2c;
-}
-.stats_type
-{
-	font-size: 14px;
-	font-weight: 600;
-	color: #929191;
-}
-.stats_bar
-{
-	width: 50%;
-	height: 2px;
-	background: #e1e1e1;
-	float: left;
-	margin-top: 33px;
-}
-.stats_bar_perc
-{
-	position: absolute;
-	top: 0;
-	height: 2px;
-	background: #31124b;
-	max-width: 100% !important;
-}
-.stats_bar_perc div
-{
-	width: 100%;
-}
-.stats_bar_value
-{
-	position: absolute;
-	top: -39px;
+/* Menambahkan jarak atas pada Contact Us */
+.section_title {
+    margin-top: 30px; /* Jarak atas untuk bagian Contact Us */
+    text-align: center;
 }
 
-/*********************************
-9. Add
-*********************************/
-
-.add
-{
-	width: 100%;
-}
-.add_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-.add_container
-{
-	padding-top: 52px;
-	padding-bottom: 64px;
-}
-.add_content
-{
-	padding-left: 151px;
-}
-.add_title
-{
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #FFFFFF;
-	padding-left: 2px;
-}
-.add_subtitle
-{
-	font-size: 16px;
-	font-weight: 400;
-	color: #FFFFFF;
-	padding-left: 7px;
-}
-.add_subtitle span
-{
-	font-size: 18px;
-	font-weight: 700;
-}
-.add_button
-{
-	margin-top: 30px;
+/* Pusatkan semua elemen */
+.section_title, 
+.contact_section {
+    text-align: center;
 }
 
-/*********************************
-10. Milestones
-*********************************/
+.contact_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-.milestones
-{
-	padding-top: 105px;
-	padding-bottom: 100px;
-}
-.milestone
-{
-	width: 100%;
-}
-.milestone_icon
-{
-	display: inline-block;
-	height: 58px;
-}
-.milestone_icon img
-{
-	position: relative;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-.milestone_counter
-{
-	font-size: 48px;
-	font-weight: 600;
-	color: #2d2c2c;
-	line-height: 1;
-	margin-top: 25px;
-}
-.milestone_text
-{
-	font-size: 14px;
-	font-weight: 600;
-	color: #9a9999;
-	margin-top: 22px;
-	text-transform: uppercase;
+.contact_block {
+    margin-bottom: 10px; /* Jarak antar blok */
+    text-align: center;
 }
 
 /*********************************
 11. Footer
 *********************************/
 
-.footer
-{
-	width: 100%;
-	padding-top: 113px;
-	padding-bottom: 104px;
-	background: #31124b;
+.footer {
+    width: 100%;
+    padding-top: 113px;
+    padding-bottom: 104px;
+    background: #31124b;
 }
-.footer_title
-{
-	font-size: 15px;
-	font-weight: 700;
-	color: #FFFFFF;
-	text-transform: uppercase;
+.footer_title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 /*********************************

@@ -9,20 +9,7 @@
 <body>
     <div class="container">
         <h1>Invoice Form</h1>
-        <!-- Form modified with action to navigate to invoice.html -->
         <form id="invoiceForm" action="invoice.html" method="GET">
-            <!-- Billed By Section -->
-            <div class="form-section">
-                <h2>Billed By</h2>
-                <label for="billedByName">Name</label>
-                <input type="text" id="billedByName" name="billedByName" placeholder="Enter name" required>
-                <label for="billedByAddress">Address</label>
-                <textarea id="billedByAddress" name="billedByAddress" rows="3" placeholder="Enter address" required></textarea>
-                <label for="billedByEmail">Email</label>
-                <input type="email" id="billedByEmail" name="billedByEmail" placeholder="Enter email" required>
-                <label for="billedByPhone">Phone</label>
-                <input type="text" id="billedByPhone" name="billedByPhone" placeholder="Enter phone number" required>
-            </div>
 
             <!-- Billed To Section -->
             <div class="form-section">
@@ -43,15 +30,17 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Service Description</th>
-                            <th>Qty</th>
+                            <th>Service</th>
+                            <th>Check-In</th>
+                            <th>Check-Out</th>
                             <th>Rate</th>
                         </tr>
                     </thead>
                     <tbody id="servicesTable">
                         <tr>
                             <td><input type="text" name="serviceDesc[]" placeholder="Enter description" required></td>
-                            <td><input type="number" name="qty[]" placeholder="Enter quantity" required></td>
+                            <td><input type="date" name="checkIn[]" required></td>
+                            <td><input type="date" name="checkOut[]" required></td>
                             <td><input type="number" name="rate[]" placeholder="Enter rate" required></td>
                         </tr>
                     </tbody>
@@ -83,7 +72,8 @@
             const newRow = `
                 <tr>
                     <td><input type="text" name="serviceDesc[]" placeholder="Enter description" required></td>
-                    <td><input type="number" name="qty[]" placeholder="Enter quantity" required></td>
+                    <td><input type="date" name="checkIn[]" required></td>
+                    <td><input type="date" name="checkOut[]" required></td>
                     <td><input type="number" name="rate[]" placeholder="Enter rate" required></td>
                 </tr>
             `;

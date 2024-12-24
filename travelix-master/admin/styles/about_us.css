@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-section .content {
+    flex: 1 1 50%;
+}
+
+.about-section img {
+    flex: 1 1 50%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.content h2 {
+    font-size: 2em;
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+.content p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Statistics Section */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.statistics .stat {
+    text-align: center;
+}
+
+.statistics .stat h3 {
+    font-size: 2em;
+    color: #2575fc;
+    margin: 0;
+}
+
+.statistics .stat p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .statistics {
+        flex-direction: column;
+    }
+}
