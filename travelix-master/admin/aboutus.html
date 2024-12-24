@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel & Trip - CRUD</title>
+  <title>Car Rental - List Cars</title>
   <link rel="stylesheet" href="styles/admin.css">
-  <link rel="stylesheet" href="styles/list_travel.css">
+
 </head>
 <body>
   <div class="dashboard">
@@ -16,36 +16,30 @@
         <a href="admin.html" class="nav-item">Home</a>
         <a href="order.html" class="nav-item">Order</a>
         <a href="invoice.html" class="nav-item">Invoice</a>
-        <a href="list_travel.html" class="nav-item active">Travel & Trip</a>
+        <a href="list_travel.html" class="nav-item">Travel & Trip</a>
         <a href="list_car.html" class="nav-item">Car Rental</a>
-        <a href="aboutus.html" class="nav-item">About Us</a>
+        <a href="aboutus.html" class="nav-item active">About Us</a>
       </nav>
     </aside>
 
     <!-- Main Content -->
     <main class="main-content">
       <header class="header">
-        <h1>Travel & Trip - Manage Offers</h1>
-        <a href="travel_offer.html" class="btn">Add New Offer</a>
+        <h1>About US - Manage Offers</h1>
+        <a href="about_us/aboutus.html" class="btn">Add New Offer</a>
       </header>
       <main class="content">
         <table class="table">
           <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Price</th>
-              <th>Image</th>
-              <th>Actions</th>
-            </tr>
+
           </thead>
-          <tbody id="offerTable">
+          <tbody id="about_us">
             <!-- Rows will be dynamically generated here -->
           </tbody>
         </table>
       </main>
     </main>
   </div>
+  <script src="js/about_us.js"></script>
 </body>
 </html>
