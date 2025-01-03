@@ -1,4 +1,6 @@
-const baseUrl = "http://localhost:8000/api/admin";
+// File: /travelix-master/admin/js/detail_car_table.js
+
+const adminBaseUrl = "http://localhost:8000/api/admin"; // Changed variable name
 
 // Fungsi untuk mengambil detail mobil berdasarkan ID
 async function loadCarDetails() {
@@ -11,7 +13,7 @@ async function loadCarDetails() {
     }
 
     try {
-        const response = await fetch(`${baseUrl}/${carId}`);
+        const response = await fetch(`${adminBaseUrl}/${carId}`); // Gunakan variable baru di sini
         const car = await response.json();
 
         const carDetailsContainer = document.querySelector("#carListTable");
@@ -20,6 +22,7 @@ async function loadCarDetails() {
         const carDetail = document.createElement("div");
         carDetail.classList.add("single_listing");
 
+        // Tambahkan tombol "Pesan" dan link ke invoice dengan ID mobil
         carDetail.innerHTML = `
             <div class="hotel_info">
                 <div class="hotel_title_container d-flex flex-lg-row flex-column">
@@ -32,7 +35,8 @@ async function loadCarDetails() {
                     </div>
                     <div class="hotel_title_button ml-lg-auto text-lg-right">
                         <div class="button book_button trans_200">
-                            <a href="#">book<span></span><span></span><span></span></a>
+                            <!-- Link ke invoice.html dengan ID mobil -->
+                            <a href="invoice/invoice.html?id=${car.id}">Pesan<span></span><span></span><span></span></a>
                         </div>
                         <div class="hotel_map_link_container">
                             <div class="hotel_map_link">See Location on Map</div>

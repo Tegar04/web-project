@@ -15,7 +15,7 @@
       <nav class="nav">
         <a href="admin.html" class="nav-item">Home</a>
         <a href="order.html" class="nav-item">Order</a>
-        <a href="invoice.html" class="nav-item active">Invoice</a>
+        <a href="list_invoice.html" class="nav-item active">Invoice</a>
         <a href="list_travel.html" class="nav-item">Travel & Trip</a>
         <a href="list_car.html" class="nav-item">Car Rental</a>
         <a href="aboutus.html" class="nav-item">About Us</a>
@@ -37,48 +37,19 @@
               <th>#</th>
               <th>Invoice ID</th>
               <th>Customer Name</th>
-              <th>Payment Amount</th>
-              <th>Payment Status</th>
-              <th>Actions</th>
+              <th>No_hp</th>
+              <th>Email</th>
+              <th>jalan</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>INV-001</td>
-              <td>John Doe</td>
-              <td>$500</td>
-              <td>Paid</td>
-              <td><button class="btn btn-secondary">View</button></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>INV-002</td>
-              <td>Jane Doe</td>
-              <td>$300</td>
-              <td>Pending</td>
-              <td><button class="btn btn-secondary">View</button></td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>INV-003</td>
-              <td>Alice Smith</td>
-              <td>$700</td>
-              <td>Paid</td>
-              <td><button class="btn btn-secondary">View</button></td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>INV-004</td>
-              <td>Bob Martin</td>
-              <td>$400</td>
-              <td>Pending</td>
-              <td><button class="btn btn-secondary">View</button></td>
-            </tr>
+          <tbody id="invoice-list">
+            <!-- Data invoice akan dimasukkan di sini oleh JavaScript -->
           </tbody>
         </table>
       </section>
     </main>
   </div>
+
+  <script src="/travelix-master/admin/js/invoice.js"></script> <!-- Link ke JS untuk mengelola data invoice -->
 </body>
 </html>

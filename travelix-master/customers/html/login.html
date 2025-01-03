@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelEase - Login/Signup</title>
+    <link rel="stylesheet" href="/travelix-master/customers/css/styles.css"
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>BolangTrans</h1>
+            <p class="tagline">Discover amazing destinations and create unforgettable memories. Join our community of travelers today!</p>
+        </div>
+        <div class="right-panel">
+            <!-- Login Form -->
+            <div class="form-container active" id="login-form">
+                <h2 style="margin-bottom: 30px; color: #333;">Welcome Back!</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <div class="toggle-form">
+                    Don't have an account?<a href="#" onclick="toggleForm()">Sign up</a>
+                </div>
+            </div>
+
+            <!-- Sign Up Form -->
+            <div class="form-container" id="signup-form">
+                <h2 style="margin-bottom: 30px; color: #333;">Create Account</h2>
+                <form>
+                    <div class="input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <button type="submit" class="btn">Sign Up</button>
+                </form>
+                <div class="toggle-form">
+                    Already have an account?<a href="#" onclick="toggleForm()">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/travelix-master/customers/js/script.js"></script>
+</body>
+</html>
